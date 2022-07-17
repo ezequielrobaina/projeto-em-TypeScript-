@@ -1,0 +1,19 @@
+{
+  "name" : " backend " ,
+  "versão" : " 1.0.0 " ,
+  "main" : " index.js " ,
+  "licença" : " MIT " ,
+  "roteiros" : {
+    "dev:server" : " ts-node-dev --respawn --transpileOnly src/index.ts "
+  },
+  "devDependencies" : {
+    "@types/cors" : " ^2.8.6 " ,
+    "@types/express" : " ^4.17.2 " ,
+    "ts-node-dev" : " ^1.0.0-pre.44 " ,
+    "datilografado" : " ^3.8.2 "
+  },
+  "dependências" : {
+    "cors" : " ^2.8.5 " ,
+    "expresso" : " ^4.17.1 "
+  }
+}
