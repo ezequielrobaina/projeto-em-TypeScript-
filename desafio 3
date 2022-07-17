@@ -1,0 +1,93 @@
+// O código abaixo tem alguns erros e não funciona como Deveria. Você pode identificar quais são e corrige-los em um arquivo TS?
+
+deixe  botaoAtualizar  =  document . getElementById ( 'atualizar-saldo' ) ;
+deixe  botaoLimpar  =  document . getElementById ( 'limpar-saldo' ) ;
+deixe  soma  =  documento . getElementById ( 'soma' ) ;
+deixe  campoSaldo  =  documento . getElementById ( 'campo-saldo' ) ;
+
+campoSaldo . innerHTML  =  0
+
+função  somarAoSaldo ( soma )  {
+    campoSaldo . innerHTML  +=  soma ;
+}
+
+function  Limparaldo ( )  {
+    campoSaldo . innerHTML  =  '' ;
+}
+
+botaoAtualizar . addEventListener ( 'click' ,  function  ( )  {
+    somarAoSaldo ( valor soma . ) ;
+} ) ;
+
+botaoLimpar . addEventListener ( 'click' ,  function  ( )  {
+    limparSaldo ( ) ;
+} ) ;
+
+/**
+    <h4>Valor a ser adicionado: <input id="soma"> </h4>
+    <button id="atualizar-saldo">Atualizar saldo</button>
+    <button id="limpar-saldo">Limpar seu saldo</button>
+    <h1>"Seu saldo é: " <span id="campo-saldo"></span></h1>
+*/
+
+
+
+
+
+
+
+
+
+resposta
+
+export  { }  // Para não reivindicado de variáveis ​​duplicadas
+/**
+    Em todos os casos de uso do getElementById(), o elemento é verificado nulo e ifs são para garantir que seu código funcionará da melhor forma.
+    No entanto, vão existir circunstâncias em que o desenvolvedor vai ter certeza de que o campo está lá e ele pode escrever o código da seguinte maneira:
+        document.getElementById('limpar-saldo')!;
+    A exclamação no fim é um sinal de que aquele campo não é nulo e que essa função realmente vai trazer algo. Assim, os ifs não são de mercado.
+    Como exemplo, você seguirá essa metodologia no campo 'botaoLimpar'.
+*/
+deixe  botaoAtualizar  =  document . getElementById ( 'atualizar-saldo' ) ;
+deixe  botaoLimpar  =  document . getElementById ( 'limpar-saldo' ) ! ;
+deixe  soma  =  documento . getElementById ( 'soma' ) !  como  HTMLInputElement ;
+deixe  campoSaldo  =  documento . getElementById ( 'campo-saldo' ) ;
+
+deixe  saldoTotal  =  0
+
+Limpar Saldo ( )
+
+function  somarAoSaldo ( soma : numero )  {
+    if  ( campoSaldo )  {
+        saldoTotal  +=  soma
+        campoSaldo . innerHTML  =  saldoTotal . toString ( ) ;
+        limparCampoSoma ( ) ;
+    }
+}
+
+function  limparCampoSoma ( )  {
+    soma . valor  =  "" ;
+}
+
+function  Limparaldo ( )  {
+    if  ( campoSaldo )  {
+        saldoTotal  =  0 ;
+        campoSaldo . innerHTML  =  saldoTotal . toString ( ) ;
+    }
+}
+
+if  ( botaoAtualizar )  {
+    botaoAtualizar . addEventListener ( 'clique' ,  ( )  =>  {
+        somarAoSaldo ( Número ( soma.valor ) ) ; _ _ 
+    } ) ;
+}
+botaoLimpar . addEventListener ( 'click' ,  ( )  =>  {  // Percebam que aqui o texto datilografado não acusou o botao de ser nulo e não precisoi do if. Caso queiram fazer o teste, retirem a exclamação.
+    limparSaldo ( ) ;
+} ) ;
+
+/**
+    <h4>Valor a ser adicionado: <input id="soma"> </h4>
+    <button id="atualizar-saldo">Atualizar saldo</button>
+    <button id="limpar-saldo">Limpar seu saldo</button>
+    <h1>"Seu saldo é: " <span id="campo-saldo"></span></h1>
+*/
